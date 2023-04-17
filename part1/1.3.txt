@@ -1,0 +1,7 @@
+$ docker container run -d --name ex1-3 devopsdockeruh/simple-web-service:ubuntu
+7f7fc48e13347cdc0f2f397484ea372e1cb28af4cfbb2e7e31111c871a860340
+
+$ docker exec -it ex1-3 bash
+root@7f7fc48e1334:/usr/src/app# tail -f ./text.log
+
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
