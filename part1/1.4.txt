@@ -1,0 +1,11 @@
+$ docker run --rm -d -it --name ex1-4 ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+$ docker exec -it ex1-4 /bin/bash
+
+root@3d11fc84a3b4:/# apt update
+
+root@3d11fc84a3b4:/# apt install curl
+
+$ docker attach ex1-4
+
+typing helsinki.fi works now

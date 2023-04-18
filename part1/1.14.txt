@@ -1,0 +1,3 @@
+$ docker run --rm -p 8081:5000 ex1-14-fr
+
+$ docker run --rm -p 8080:8080 ex1-14-ba
