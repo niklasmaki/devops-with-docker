@@ -23,3 +23,5 @@ jobs:
         with:
           push: true
           tags: niklasmaki/express-app:latest
+          file: ./express-app/Dockerfile
+          
