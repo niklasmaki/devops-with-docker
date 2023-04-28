@@ -1,0 +1,7 @@
+Image sizes before:
+- frontend: 1.1 GB
+- backend: 1.01 GB
+
+Image sizes after optimization:
+- frontend: 309 MB
+- backend: 390 MB
