@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+    frontend:
+      image: ex1-14-fr
+      build: .
+      ports:
+        - 8081:5000
+      container_name: simple-fr
+    
+    backend:
+      image: ex1-14-ba
+      build: .
+      ports:
+        - 8080:8080
+      environment:
+        - REDIS_HOST=redis
+      container_name: simple-ba
+
+    redis:
+      image: redis
+      build: .
+      container_name: redis

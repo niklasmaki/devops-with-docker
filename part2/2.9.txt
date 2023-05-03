@@ -1,0 +1,5 @@
+The only change I had to do was remove the following line from the frontend dockerfile:
+
+ENV REACT_APP_BACKEND_URL http://localhost:8080
+
+This is because nginx is now assuming that backend calls are made to the /api endpoint, which is the default configuration for the frontend.
